@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Fotoğraflar/turkiye-ve-dunyadan-sakin-tatil-rotalari-yaz-tatili-tatil-yerleri-sakin-tatil-yerleri-hfa-j.webp'); /* Arka plan resmi */
+    background-size: cover; /* Resmi kapsayacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    color: #333; /* Genel metin rengi */
+}
+
+.header {
+    background-color: rgba(139, 69, 19, 0.8); /* Kahverengi, yarı saydam */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Başlık gölgesi */
+}
+
+.nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600; /* Daha kalın yazı */
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 2rem 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Beyaz, daha az saydam */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bölüm gölgesi */
+    margin-bottom: 2rem; /* Bölümler arası boşluk */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #8B4513; /* Kahverengi */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #FFA500; /* Turuncu */
+    color: #000; /* Siyah yazı */
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: #8B4513; /* Kahverengi */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Alt bilgi gölgesi */
+}
+
+.buton {
+    background-color: #8B4513; /* Kahverengi */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.buton:hover {
+    background-color: #A0522D; /* Daha koyu kahverengi */
+}
+
+.bilgiler {
+    background-color: #ff9100; /* Turuncu */
+    color: #000; /* Siyah yazı */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.bilgiler:hover {
+    background-color: #ff7f00; /* Daha koyu turuncu */
+}
+
+/* Yeni eklenen stiller */
+.photo-container {
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo-container:hover .overlay-img {
+    opacity: 1;
+}
+.photo-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.photo-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}

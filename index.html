@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otel Rezervasyon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Başlık -->
+    <header class="header text-white text-center py-3">
+        <h1>Otel Rezervasyon</h1>
+        <nav class="nav">
+            <a href="#hakkimizda" class="text-white mx-2">Hakkımızda</a>
+            <a href="#odalar" class="text-white mx-2">Odalar</a>
+            <a href="#rezervasyon" class="text-white mx-2">Rezervasyon</a>
+            <a href="#iletisim" class="text-white mx-2">İletişim</a>
+        </nav>
+    </header>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda" class="container section">
+        <h2>Hakkımızda</h2>
+        <p>Otelimiz, konforlu ve lüks konaklama imkanı sunan birinci sınıf bir oteldir. Misafirlerimize en iyi hizmeti sunmak için çalışıyoruz.</p>
+    </section>
+
+    <!-- Odalar Bölümü -->
+    <section id="odalar" class="container section">
+        <h2>Odalarımız</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="standartoda.html">
+                        <div class="photo-container">
+                            <img src="Fotoğraflar/standart1.webp" class="card-img-top" alt="Oda 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Standart Oda</h5>
+                            <p class="card-text">Konforlu ve ekonomik standart odalarımız.</p>
+                            <p><strong>Fiyat:</strong> 2999.99 TL / gece</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="deluxeoda.html">
+                        <div class="photo-container">
+                            <img src="Fotoğraflar/deluxe1.webp" class="card-img-top" alt="Oda 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Oda</h5>
+                            <p class="card-text">Lüks ve geniş deluxe odalarımız.</p>
+                            <p><strong>Fiyat:</strong> 3999.99 TL / gece</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="suitoda.html">
+                        <div class="photo-container">
+                            <img src="Fotoğraflar/suit3.webp" class="card-img-top" alt="Oda 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Süit Oda</h5>
+                            <p class="card-text">Özel ve lüks süit odalarımız.</p>
+                            <p><strong>Fiyat:</strong> 9999.99 TL / gece</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rezervasyon Bölümü -->
+    <section id="rezervasyon" class="container section">
+        <h2>Rezervasyon Yapın</h2>
+        <form>
+            <div class="bilgiler">
+                <label for="ad">Adınız</label>
+                <input type="text" class="form-control" id="ad" required>
+            </div>
+            <div class="bilgiler">
+                <label for="email">E-posta</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="bilgiler">
+                <label for="telefon">Telefon</label>
+                <input type="tel" class="form-control" id="telefon" required>
+            </div>
+            <div class="bilgiler">
+                <label for="oda">Oda Tipi</label>
+                <select class="form-control" id="oda" required>
+                    <option>Standart Oda</option>
+                    <option>Deluxe Oda</option>
+                    <option>Süit Oda</option>
+                </select>
+            </div>
+            <div class="bilgiler">
+                <label for="giris">Giriş Tarihi</label>
+                <input type="date" class="form-control" id="giris" required>
+            </div>
+            <div class="bilgiler">
+                <label for="cikis">Çıkış Tarihi</label>
+                <input type="date" class="form-control" id="cikis" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Rezervasyon Yap</button>
+        </form>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim" class="container section">
+        <h2>İletişim</h2>
+        <p>Bize ulaşmak için:</p>
+        <p>Email: info@otelrezervasyon.com</p>
+        <p>Telefon: +90 543 900 3052</p>
+    </section>    
+    <!-- Alt Bilgi -->
+    <footer class="bg-primary text-white text-center py-3" style="background-color: #8B4513;">
+        <p>&copy; 2023 Otel Rezervasyon. Tüm hakları saklıdır.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
